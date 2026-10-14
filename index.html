@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Met Ceramics</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="chart.umd.min.js" defer></script>
+  <script src="data.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <h1>Met Ceramics</h1>
+  <p>Click a dot to see the artwork.</p>
+  <div class="chart-box">
+    <canvas id="ceramic-chart" aria-label="24 ceramic artworks by date and material"></canvas>
+  </div>
+  <p >24 artworks from The Met. Dates are plotted at the midpoint of their date range.</p>
+  <dialog id="picture-popup">
+    <button id="close-popup" aria-label="Close image">×</button>
+    <img id="artwork-image" alt="">
+    <p id="artwork-title"></p>
+  </dialog>
+</body>
+</html>
